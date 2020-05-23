@@ -1,0 +1,10 @@
+{"ALG_DESC": "This script is the algorithm A-star and gives a raster with the best way. We choose the limit of elevation in order to put obstacles and we have to choose between 8 and 4 for the number of directions (with or without diagonals).", "ALG_CREATOR": "JEANDENANS L.",
+"ALG_HELP_CREATOR": "JEANDENANS L.",
+"Layer0": "a raster of the study area.",
+"xA": "X coordinate of the starting point",
+"yA": "Y coordinate of the starting point",
+"xB": "X coordinate of the end point",
+"yB": "Y coordinate of the end point",
+"direction": "Choose between 4 or 8 directions",
+"Output": "The output raster with the way",
+"hauteur": "Elevation limit. Raster cells with a higher elevation are considered as obstacles."}
