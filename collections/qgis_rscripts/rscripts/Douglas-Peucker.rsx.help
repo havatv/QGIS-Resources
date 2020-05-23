@@ -1,0 +1,6 @@
+{"ALG_DESC": "The Douglas-Peucker algorithm for line simplification.",
+"ALG_CREATOR": "JEANDENANS L.", "ALG_HELP_CREATOR": "JEANDENANS L.",
+"Layer": "Input polygon vector layer",
+"distance": "degree of simplification: the maximum distance between the simplified line and the polygon outline.",
+"Output1": "dataset with simplified borders",
+"Output2": "dataset with simplified outlines"}
