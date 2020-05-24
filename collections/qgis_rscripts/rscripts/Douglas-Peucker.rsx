@@ -64,10 +64,9 @@ FRONT <- c()
 front <- c()
 for (w in (1:(p-1))){
   Layer1 <- SpatialPolygonsDataFrame(SpatialPolygons(list(Layer@polygons[[w]])),
-data = as.data.frame(c(1:length(SpatialPolygons(list(Layer@polygons[[w]]))))),match.ID = F)
-  for (W in((w+1):p)){
-    Layer0 <- SpatialPolygonsDataFrame(SpatialPolygons(list(Layer@polygons[[W]])),
-    data = as.data.frame(c(1:length(SpatialPolygons(list(Layer@polygons[[W]]))))), match.ID = F)
+data=as.data.frame(c(1:length(SpatialPolygons(list(Layer@polygons[[w]]))))), match.ID=F)
+  for (W in ((w+1):p)){
+    Layer0 <- SpatialPolygonsDataFrame(SpatialPolygons(list(Layer@polygons[[W]])), data=as.data.frame(c(1:length(SpatialPolygons(list(Layer@polygons[[W]]))))), match.ID=F)
     A <- gIntersection(Layer1, Layer0, byid=FALSE, id=NULL)
     if (class(A) != 'NULL'){
       A <- gLineMerge(A, byid=FALSE, id=NULL)
